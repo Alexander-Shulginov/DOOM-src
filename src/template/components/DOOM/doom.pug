@@ -1,0 +1,22 @@
+.doom
+	.doom__container.js-tilt
+		video.doom__video(src="./video/main-logo.webm", loop, autoplay, width="550") 
+		nav.doom__nav
+			ul.doom__list
+				li.doom__item
+					a.doom__link(href="#bestiary") 
+						span.doom__text bestiary 
+				li.doom__item
+					a.doom__link(href="#guns") 
+						span.doom__text guns
+				li.doom__item
+					a.doom__link(href="#slayer") 
+						span.doom__text slayer
+		.doom__sound
+			.doom__volume 
+				+svg("volume", "doom__volume-icon", 25)
+				+svg("volume-on", "doom__volume-icon doom__volume-icon--on isActive", 25)
+				+svg("volume-off", "doom__volume-icon doom__volume-icon--off", 25)
+				audio.doom__track(src="./audio/music.mp3", id="player", crossorigin="anonymous", loop) 
+		//- canvas.canvas-elem(id="myCanvas", width=1200, height=256)
+		#waveform

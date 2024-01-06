@@ -1,0 +1,58 @@
+@media (max-height: 840px) {
+	.swiper-wrapper {
+		height: 100%;
+		padding: 30px 0;
+	}
+}
+
+@media (max-width: 768px) {
+	.bestiary {
+		&__navigation {
+			display: none;
+		}
+
+		&__wrapper {
+			padding: 0 15px;
+		}
+
+		&__descr {
+			max-width: 95%;
+		}
+
+		&__inner {
+			padding: 0;
+		}
+	}
+}
+
+@media (max-width: 666px) {
+	.bestiary {
+		&__wrapper {
+			flex-direction: column;
+			gap: 0;
+		}
+
+		&__info {
+			display: none; //!!!
+			max-width: 100%;
+			flex-direction: row;
+			gap: 66px;
+			margin-bottom: 16px;
+		}
+
+		&__key {
+			width: 86px;
+		}
+
+		&__img-box {
+		}
+	}
+}
+
+@media (max-width: 425px) {
+	.bestiary {
+		&__img-box {
+			height: 380px;
+		}
+	}
+}

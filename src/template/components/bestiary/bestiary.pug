@@ -1,0 +1,300 @@
+section.bestiary#bestiary
+    .swiper
+        .bestiary__navigation
+            .swiper-button-prev
+                img.swiper-icon-prev(src="./icons/slider-prev.svg" width="34", height="57" alt="Icon")
+                img.swiper-icon-prev(src="./icons/slider-prev.svg" width="34", height="57" alt="Icon")
+                img.swiper-icon-prev(src="./icons/slider-prev.svg" width="34", height="57" alt="Icon")
+            .swiper-button-next
+                img.swiper-icon-next(src="./icons/slider-next.svg" width="34", height="57" alt="Icon")
+                img.swiper-icon-next(src="./icons/slider-next.svg" width="34", height="57" alt="Icon")
+                img.swiper-icon-next(src="./icons/slider-next.svg" width="34", height="57" alt="Icon")
+        .parallax-bg(data-swiper-parallax="-23%")
+        .swiper-wrapper
+            //possessed
+            .swiper-slide
+                .bestiary__inner 
+                    span.bestiary__name possessed 
+                    .bestiary__wrapper
+                        .bestiary__img-box 
+                            img.bestiary__img(src="./img/bestiary/possessed.webp" width="300" height="250" alt="Possessed") 
+                        .bestiary__info 
+                            ul.bestiary__key Class
+                                li.bestiary__value Undead
+                            ul.bestiary__key Attack Damage
+                                li.bestiary__value Melee
+                            ul.bestiary__key Health Points
+                                li.bestiary__value 250
+                            ul.bestiary__key Drops
+                                li.bestiary__value Ammo
+                                li.bestiary__value Health
+                    p.bestiary__descr
+                        | Possessed people are created by exposure to Lazarus waves, a phenomenon discovered by Dr. Olivia Peer while working on the Lazarus Project. Most victims exposed to argent waves simply die, but some of the subjects, after absorbing small amounts of argent energy, enter a state of postmortem wakefulness.
+                    p.bestiary__descr  
+                        | The postmortem brain activity of the possessed is limited to instinctive behavior. When encountering living beings, they fiercely defend their territory, and when left alone, they often go into prolonged hibernation.
+                    p.bestiary__descr  
+                        | Despite necrosis of all but the brain and internal organs, the victim continues to move and demonstrate residual consciousness for weeks or even months after clinical death.
+                    span#content.text
+            //imp
+            .swiper-slide
+                .bestiary__inner 
+                    span.bestiary__name imp
+                    .bestiary__wrapper
+                        .bestiary__img-box 
+                            img.bestiary__img(src="./img/bestiary/imp.webp" alt="Imp" width="500" height="350", loading="lazy") 
+                        .bestiary__info 
+                            ul.bestiary__key Class
+                                li.bestiary__value Synthetic
+                            ul.bestiary__key Attack Damage
+                                li.bestiary__value Fireball
+                                li.bestiary__value Jump
+                                li.bestiary__value Melee
+                            ul.bestiary__key Health Points
+                                li.bestiary__value 750
+                            ul.bestiary__key Drops
+                                li.bestiary__value Ammo
+                                li.bestiary__value Health
+                                li.bestiary__value Armor
+                    p.bestiary__descr
+                        | These Ferocious and agile demons are found all over Hell, and are often used on the front line in concerted attack in either dimension. The revel in battle, feeding off their victims, when the hunger takes them.
+                    p.bestiary__descr  
+                        | Despite their low status among the demon ranks and their seemingly endless number, Imps have unique characteristics in battle. Some prefer fighting from an elevated position, while others will rush their target and swipe at them with razor sharp claws. 
+                    p.bestiary__descr  
+                        | The Imp is capable of channeling Hell energy through its hands and shaping it into a projectile. As the Imp Channels the energy, airborne particles and debris are sucked into the maelstrom to create a condensed, superheated fireball.
+            // security
+            .swiper-slide
+                .bestiary__inner 
+                    span.bestiary__name security
+                    .bestiary__wrapper
+                        .bestiary__img-box 
+                            img.bestiary__img(src="./img/bestiary/security.webp" alt="Obssessed security" width="500" height="350", loading="lazy") 
+                        .bestiary__info 
+                            ul.bestiary__key Class
+                                li.bestiary__value Undead
+                            ul.bestiary__key Attack Damage
+                                li.bestiary__value Shield
+                                li.bestiary__value Shotgun
+                            ul.bestiary__key Health Points
+                                li.bestiary__value 950
+                            ul.bestiary__key Drops
+                                li.bestiary__value Health
+                                li.bestiary__value Armor
+                    p.bestiary__descr
+                        | Possessed Security units exhibit the most complex battle strategies of all possessed humans, including mobile shield advances towards the enemy and firing while in defilade. Possessed Security will also drop their shields to adopt a more accurate firing stance at the cost of their defense.
+                    p.bestiary__descr  
+                        | A Possessed Security will keep an optimal distance from its target. If the target gets too close, the Possessed Security will attack with a ferocious shield bash then retreat to a preferred engagement range.
+                    p.bestiary__descr  
+                        | Possessed Security have only been observed using the DS-117 UAC shotgun and shield outfit which suggests that their ranks are exclusively created from members of a special forces military unit called the UAC NeoPhalanx. 
+            //revenant
+            .swiper-slide
+                .bestiary__inner 
+                    span.bestiary__name revenant
+                    .bestiary__wrapper
+                        .bestiary__img-box 
+                            img.bestiary__img(src="./img/bestiary/revenant.webp" alt="Revenant" width="500" height="350", loading="lazy") 
+                        .bestiary__info 
+                            ul.bestiary__key Class
+                                li.bestiary__value Synthetic
+                                li.bestiary__value Former Human
+                            ul.bestiary__key Attack Damage
+                                li.bestiary__value Missile
+                                li.bestiary__value Missile barrage
+                                li.bestiary__value Melee
+                            ul.bestiary__key Health Points
+                                li.bestiary__value 950 300(MP)
+                            ul.bestiary__key Drops
+                                li.bestiary__value Health
+                                li.bestiary__value Ammo
+                    p.bestiary__descr
+                        | Revenants are UAC Military operatives that have been methodically transformed into demonic combatants through cybernetic augmentation and repeated Lazarus Wave exposure. 
+                    p.bestiary__descr  
+                        | The transformation begins by attaching a Multiple Launch Rocket Battery (MLRB) onto each shoulder of the patient, coupled to an Argent-charged neural biochip implanted at the base of the cerebral cortex.
+                    p.bestiary__descr  
+                        | The MLRB allows the Revenant to both attack its target with multiple conventional rockets, and also to fire mobility boosters located under each MLRB.
+            //hell knight
+            .swiper-slide
+                .bestiary__inner 
+                    span.bestiary__name hell knight
+                    .bestiary__wrapper
+                        .bestiary__img-box 
+                            img.bestiary__img(src="./img/bestiary/knight.webp" alt="Hell knight" width="500" height="350", loading="lazy") 
+                        .bestiary__info 
+                            ul.bestiary__key Class
+                                li.bestiary__value Demon
+                                li.bestiary__value Warrior
+                            ul.bestiary__key Attack Damage
+                                li.bestiary__value Melee
+                                li.bestiary__value Hell Wave
+                            ul.bestiary__key Health Points
+                                li.bestiary__value 2000
+                            ul.bestiary__key Drops
+                                li.bestiary__value Health
+                                li.bestiary__value Ammo
+                    p.bestiary__descr
+                        | The Hell Knight is a towering brute built for combat deep in the bowels of Hell. These diabolical beasts are the prized gladiators of the demon-horde. They relentlessly stomp towards their target, smashing their massive fists into the ground to create shockwaves that stagger their opponent and leave them vulnerable to bone-crushing melee attacks. 
+                    p.bestiary__descr  
+                        | The Hell Knight's powerful legs allow it to leap across large distances effortlessly, quickly closing the gap to its enemy. 
+                    p.bestiary__descr  
+                        | Tablets, retrieved from the Great Steppe in the UAC Automated Survey of 2143, suggest that Hell Knights originally flanked the Great Serpent during the first age.
+            //hell razer
+            .swiper-slide
+                .bestiary__inner 
+                    span.bestiary__name hell razer
+                    .bestiary__wrapper
+                        .bestiary__img-box 
+                            img.bestiary__img(src="./img/bestiary/razer.webp" alt="Hell razer" width="500" height="350", loading="lazy") 
+                        .bestiary__info 
+                            ul.bestiary__key Class
+                                li.bestiary__value Infernal Soldier
+                            ul.bestiary__key Attack Damage
+                                li.bestiary__value Laser weapon
+                                li.bestiary__value Melee
+                            ul.bestiary__key Health Points
+                                li.bestiary__value 2200
+                            ul.bestiary__key Drops
+                                li.bestiary__value Health
+                                li.bestiary__value Ammo
+                    p.bestiary__descr
+                        | The Hell Razer is an astute and tactical foe that will engage enemies from a distance with a powerful beam of unrefined hell energy. 
+                    p.bestiary__descr  
+                        | The beam emanates from an arm-like protrusion composed of cartilage and other osseous tissue. Articulation of the cartilage allows the Hell Razer to focus its energy beam into a single charged shot that will obliterate anything that stands in its path.
+                    p.bestiary__descr  
+                        | Recent dissection of a captured Hell Razer has revealed a remarkable embryogenesis. Between the third and eight week of development, a parasitic Hell Razer will seek out a suitable host to cremate from within. 
+            //summoner
+            .swiper-slide
+                .bestiary__inner 
+                    span.bestiary__name summoner
+                    .bestiary__wrapper
+                        .bestiary__img-box 
+                            img.bestiary__img(src="./img/bestiary/sum.webp" alt="Summoner" width="500" height="350", loading="lazy") 
+                        .bestiary__info 
+                            ul.bestiary__key Class
+                                li.bestiary__value Infernal Priest
+                            ul.bestiary__key Attack Damage
+                                li.bestiary__value Sommoning demons
+                                li.bestiary__value Melee
+                                li.bestiary__value Wave of hell energy
+                            ul.bestiary__key Health Points
+                                li.bestiary__value 2750
+                            ul.bestiary__key Drops
+                                li.bestiary__value Health
+                                li.bestiary__value Ammo
+                    p.bestiary__descr
+                        | The Summoner, a cunning adversary, is primarily a defensive summoning unit. As the demon-horde swarms the enemy, the Summoner sustains the battle by opening a rift to Hell and calling forth reinforcements. To prevent being overrun by the relentless horde, the Summoner should become a primary target in any battle strategy.
+                    p.bestiary__descr  
+                        | When directly challenged in combat, the Summoner is capable of channeling Hell energy into an Argent wave. Although this wave kills most humans, an occasional victim will be transformed into The Possessed
+                    p.bestiary__descr  
+                        | Surviving an Argent wave attack is extremely unlikely but does not appear to be random. There is evidence that the Summoner selects the most resilient of combatants for induction to the army of Hell.
+            //cacodemon
+            .swiper-slide
+                .bestiary__inner 
+                    span.bestiary__name cacodemon
+                    .bestiary__wrapper
+                        .bestiary__img-box 
+                            img.bestiary__img(src="./img/bestiary/caco.webp" alt="Cacodeamon" width="500" height="350", loading="lazy") 
+                        .bestiary__info 
+                            ul.bestiary__key Class
+                                li.bestiary__value Devourer
+                            ul.bestiary__key Attack Damage
+                                li.bestiary__value Plasm orb
+                                li.bestiary__value Melee
+                            ul.bestiary__key Health Points
+                                li.bestiary__value 500(MP)
+                            ul.bestiary__key Drops
+                                li.bestiary__value Health
+                                li.bestiary__value Ammo
+                    p.bestiary__descr
+                        | Cacodemons are monstrous psionic demons driven by the desire to feed. They display limited intelligence, but are so often sent into the fray as their natural size and abilities make them an intimidating weapon for the demon-horde 
+                    p.bestiary__descr  
+                        | When a Cacodemon senses the presence of the living, it will hunt them relentlessly until it gets close enough to gnaw on them using an impressive set of mandibles. 
+                    p.bestiary__descr  
+                        | To aid the hunt, the Cacodemon has a psychoactive narcotic bile which it spews at range. On contact, this bile inhibits the perception of the target and compromises movement. 
+            //lost soul
+            .swiper-slide
+                .bestiary__inner 
+                    span.bestiary__name lost soul
+                    .bestiary__wrapper
+                        .bestiary__img-box 
+                            img.bestiary__img(src="./img/bestiary/soul.webp" alt="Lost soul" width="500" height="333" , loading="lazy") 
+                        .bestiary__info 
+                            ul.bestiary__key Class
+                                li.bestiary__value Devourer
+                            ul.bestiary__key Attack Damage
+                                li.bestiary__value Explosion
+                            ul.bestiary__key Health Points
+                                li.bestiary__value 100
+                            ul.bestiary__key Drops
+                                li.bestiary__value None
+                    p.bestiary__descr
+                        | These demons are found wandering aimlessly within the temples of Hell as they search for a host to inhabit. When a potential victim is found, they will converge on the target and explode with a blast of Hell energy. 
+                    p.bestiary__descr  
+                        | Lesser-willed beings weakened by the explosion will then be possessed by the demon and the host's soul becomes lost in turn.
+                    p.bestiary__descr  
+                        | Tablets revealed from the Corrax suggest the Lost Souls are considered the lowest of the demons- even lower than Imps.
+            //baron
+            .swiper-slide
+                .bestiary__inner 
+                    span.bestiary__name baron of hell
+                    .bestiary__wrapper
+                        .bestiary__img-box 
+                            img.bestiary__img(src="./img/bestiary/baron.webp" alt="Baron of Hell" width="500" height="350" , loading="lazy") 
+                        .bestiary__info 
+                            ul.bestiary__key Class
+                                li.bestiary__value Infernal Servant
+                            ul.bestiary__key Attack Damage
+                                li.bestiary__value Melee 
+                                li.bestiary__value Leep Attack
+                                li.bestiary__value Hell Wave
+                            ul.bestiary__key Health Points
+                                li.bestiary__value 4000 700(MP)
+                            ul.bestiary__key Drops
+                                li.bestiary__value Armor
+                                li.bestiary__value Health
+                    p.bestiary__descr
+                        | The Baron of Hell is the highest demon among the order of the Hell Knights. They rarely leave Hell, and no Baron of Hell has yet been captured by any of the Tethering Operations. Details regarding their behavior and physiology are therefore limited.
+                    p.bestiary__descr  
+                        | Barons, larger and faster than their lesser brothers, also possess the ability to generate Hell-energy fireballs which can be hurled at a target. In the doomed Project Lazarus Manned Expedition (MTC 2145/128) it is believed that most of the explorers were set upon by Barons of Hell, though the details are unclear.
+                    p.bestiary__descr
+                        | Tablets, retrieved from the Great Steppe in the UAC Automated Survey of 2143, suggest that the Barons of Hell are the current Royal Guard of the unknown dark lord of the fourth age.
+            //cyberdemon
+            .swiper-slide
+                .bestiary__inner 
+                    span.bestiary__name cyberdemon
+                    .bestiary__wrapper
+                        .bestiary__img-box 
+                            img.bestiary__img(src="./img/bestiary/cyberdemon.webp" alt="Cyberdemon" width="600" height="500", loading="lazy") 
+                        .bestiary__info 
+                            ul.bestiary__key Class
+                                li.bestiary__value Synthetic
+                                li.bestiary__value Cybernetic Demon
+                            ul.bestiary__key Attack Damage
+                                li.bestiary__value Rocket barrage
+                                li.bestiary__value Rush
+                                li.bestiary__value Melee
+                                li.bestiary__value Laser Canon
+                                li.bestiary__value Hell wave
+                                li.bestiary__value Demonic sword
+                            ul.bestiary__key Health Points
+                                li.bestiary__value 4000 750(MP)
+                            ul.bestiary__key Drops
+                                li.bestiary__value Armor
+                                li.bestiary__value Health
+                    p.bestiary__descr
+                        | The cyberdemon, the first result of Project Lazarus, is the most striking evidence of success in argent-organics research. The monster was the result of a combination of a Baalgar demon discovered by the second manned expedition of Project Lazarus, (MCV 2148/177), and an argent-energy accumulator. 
+                    p.bestiary__descr  
+                        | The power of the cyberdemon is so great that the monster has to be kept permanently immobilized. Several attempts to tame the monster have been unsuccessful: when the cyberdemon's strength runs out, it simply draws energy from the battery and attacks with increased fury. 
+                    p.bestiary__descr  
+                        | The only way to stop the beast is to disable the Argent Implant. The Cyberdemon will remain immobilized until a viable method of controlling it an effective method of controlling it is found.
+            //mastermind
+            .swiper-slide
+                .bestiary__inner 
+                    span.bestiary__name mastermind
+                    .bestiary__wrapper
+                        .bestiary__img-box 
+                            img.bestiary__img(src="./img/bestiary/spider.webp" width="655" height="320" alt="Mastermind", loading="lazy") 
+                    p.bestiary__descr
+                        | The first Project Lazarus Tethering Operation retrieved a small compendium from the Umbral Plains in the crypt of a destroyed tower of unknown construction. This "vade mechum" was mostly illegible, but it did contain one of the rare references to the Aranea Imperatix - a mystical demon that is still largely unknown. 
+                    p.bestiary__descr  
+                        | When the gate is opened, in the fourth age, when we have risen and the masters have shown us the path, she will be come.
+                    p.bestiary__descr  
+                        | The Aranea Imperatix. Carried in the mind of all who follow, fed from the blood of those who fell, made with bone of rock, iron, steel and sinew. A mighty god to rule over all other gods. One become two become legion.

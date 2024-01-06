@@ -1,0 +1,32 @@
+@media (max-width: 768px) {
+	.doom {
+		height: auto;
+		padding-bottom: 150px;
+		&__volume {
+			display: none;
+		}
+
+		&__video {
+			margin-top: 50px;
+			margin-bottom: 100px;
+		}
+	}
+
+	.canvas-elem {
+		display: none;
+	}
+}
+
+@media (max-height: 900px) {
+	.canvas-elem {
+		position: relative;
+		top: -100px;
+	}
+}
+
+@media (max-height: 800px) {
+	.canvas-elem {
+		position: relative;
+		top: -150px;
+	}
+}

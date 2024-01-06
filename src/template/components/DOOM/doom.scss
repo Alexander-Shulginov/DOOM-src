@@ -1,0 +1,111 @@
+.doom {
+	position: relative;
+
+	overflow: hidden;
+
+	height: 100vh;
+
+	background-image: url(../img/doom.webp);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: cover;
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 15px;
+	}
+
+	&__video {
+		width: 100%;
+		max-width: 650px;
+		margin: 0 auto;
+	}
+
+	&__logo {
+		align-self: center;
+		margin-top: 32px;
+	}
+
+	&__nav {
+		position: relative;
+		z-index: 0;
+		top: 10%;
+		left: 0%;
+	}
+
+	&__item {
+		text-align: left;
+	}
+
+	&__link {
+		display: inline-block;
+
+		font-family: "Doom", sans-serif;
+		font-size: clamp-px(60, 110);
+		line-height: 1;
+
+		background-image: url(../img/doom-logo.webp);
+		background-repeat: no-repeat;
+		background-position: -90px 0px;
+		-webkit-background-clip: text;
+		background-clip: text;
+		background-size: 800%;
+
+		transition: all 0.2s linear;
+
+		-webkit-text-fill-color: transparent;
+
+		@media (any-hover: hover) {
+			&:hover {
+				// filter: invert(53%) sepia(130%) saturate(430%) hue-rotate(-17deg);
+				filter: invert(53%) sepia(130%) saturate(0%) hue-rotate(-17deg);
+			}
+		}
+	}
+
+	&__sound {
+		margin-top: auto;
+		margin-bottom: 55px;
+	}
+
+	&__volume {
+		cursor: pointer;
+
+		position: relative;
+		z-index: 666;
+
+		display: flex;
+		gap: 6px;
+		align-items: center;
+		justify-content: center;
+
+		width: 90px;
+		height: 90px;
+		margin-bottom: 66px;
+		margin-left: auto;
+
+		background-image: url(../img/doom-logo.webp);
+		background-position: 157px 186px;
+		border-radius: 50%;
+	}
+
+	&__volume-icon--off {
+		stroke: black;
+		stroke-linecap: round;
+		stroke-width: 4px;
+	}
+}
+
+.js-tilt {
+	position: relative;
+	z-index: 20;
+
+	width: 100%;
+	height: 100vh;
+
+	text-align: center;
+}

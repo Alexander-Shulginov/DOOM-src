@@ -1,0 +1,125 @@
+.guns {
+	@include overlay(0.7);
+
+	overflow: hidden;
+
+	height: 100vh;
+	padding-bottom: 65px;
+
+	background-image: url(../img/guns.webp);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	&__inner {
+		position: relative;
+		z-index: 666;
+	}
+
+	&__name {
+		display: inline-block;
+
+		font-family: "Doom", sans-serif;
+		font-size: 180px;
+		line-height: 1;
+
+		background-image: url(../img/doom-logo.webp);
+		background-repeat: no-repeat;
+		background-position: -90px 0px;
+		-webkit-background-clip: text;
+		background-clip: text;
+		background-size: 800%;
+
+		-webkit-text-fill-color: transparent;
+	}
+
+	&__box {
+		margin-bottom: 78px;
+		padding-top: 32px;
+		padding-right: 120px;
+		text-align: right;
+	}
+
+	&__content {
+		width: 500px;
+		text-align: center;
+	}
+
+	&__gun-name {
+		@extend .guns__name;
+
+		margin-bottom: 46px;
+		font-size: 100px; 
+	}
+
+	&__wrapper {
+		height: 150px;
+		margin-bottom: 56px;
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+		color: white;
+	}
+
+	&__info-item {
+		position: relative;
+		z-index: 677;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__dots {
+		flex-grow: 2;
+
+		color: transparent;
+
+		background-image: linear-gradient(to right, white 35%, transparent 10%);
+		background-repeat: repeat-x;
+		background-position-y: 14px;
+		background-size: 10px 1px;
+	}
+
+	&__key {
+		margin-bottom: 2px;
+		padding-right: 6px;
+		font-size: 20px;
+		font-weight: 700;
+	}
+
+	&__value {
+		overflow: hidden;
+		padding-left: 5px;
+		font-size: 18px;
+		font-weight: 400;
+	}
+
+	&__wheel {
+		position: absolute;
+		top: 10%;
+		right: 0;
+	}
+
+	&__wheel-icon {
+		display: block;
+		width: 120%;
+		height: 100%;
+	}
+
+	&__wheel-item {
+		pointer-events: none;
+	}
+
+	&__wheel-gun {
+		cursor: pointer;
+		fill: rgba(255, 255, 255, 0.319);
+		stroke-width: 19px;
+		transition: all 0.2s ease-in-out;
+		&:hover {
+			fill: rgba(255, 255, 255, 0.466);
+			stroke: rgb(198, 198, 198);
+		}
+	}
+}

@@ -1,0 +1,43 @@
+@media (max-height: 880px) {
+	.guns {
+		height: auto;
+	}
+}
+
+@media (max-width: 900px) {
+	.guns {
+		height: auto;
+		padding-bottom: clamp-px(50, 150);
+
+		&__box {
+			text-align: center;
+			padding-right: 0;
+		}
+
+		&__content {
+			text-align: left;
+		}
+	}
+}
+
+@media (max-width: 520px) {
+	.guns {
+		&__content {
+			width: 100%;
+			text-align: center;
+		}
+
+		&__box {
+			margin-bottom: clamp-px(220, 460, 320, 520);
+		}
+
+		&__wheel {
+			left: -107%;
+			transform: translateX(17%);
+		}
+
+		&__wheel-icon {
+			width: 95%;
+		}
+	}
+}
