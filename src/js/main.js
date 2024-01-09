@@ -6,11 +6,11 @@ import sliderAnimInit from './components/slider-animation';
 import gunsWheelInit from './components/guns-wheel';
 import modalInit from './components/modal';
 import wv from './components/sound-wave';
-// import soundWave from './components/sound-wave';
-// wv.play();
+import playerInit from './components/playerInit';
 
 tiltInit();
 soundControl();
 sliderAnimInit();
 gunsWheelInit();
-modalInit();
+// modalInit();
+playerInit();

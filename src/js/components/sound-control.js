@@ -1,7 +1,7 @@
 import wv from './sound-wave';
 
 const soundControl = () => {
-	const soundTrack = document.querySelector('.doom__track');
+	// const soundTrack = document.querySelector('.doom__track');
 	const soundBtn = document.querySelector('.doom__volume');
 	const playIcon = document.querySelector('.doom__volume-icon--off');
 	const muteIcon = document.querySelector('.doom__volume-icon--on');

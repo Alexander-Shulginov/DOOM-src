@@ -1,0 +1,121 @@
+.player {
+	@include overlay(0.5);
+
+	z-index: 0;
+
+	min-height: 100vh;
+	padding: 20px 0 35px 0;
+
+	background-image: url(../img/location-slayer.webp);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	&__inner {
+		position: relative;
+		z-index: 100;
+	}
+
+	&__name {
+		display: inline-block;
+
+		margin-bottom: clamp-px(20, 60);
+
+		font-family: "Doom", sans-serif;
+		font-size: 180px;
+		line-height: 1;
+
+		background-image: url(../img/doom-logo.webp);
+		background-repeat: no-repeat;
+		background-position: -90px 0px;
+		-webkit-background-clip: text;
+		background-clip: text;
+		background-size: 610%;
+
+		-webkit-text-fill-color: transparent;
+	}
+
+	&__content {
+		display: grid;
+		grid-template-columns: 1fr 356px 1fr;
+		gap: 30px;
+		// justify-items: center;
+	}
+
+	&__playlist {
+		// cursor: url(../icons/aim.png), auto;
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+	}
+
+	&__playlist--two {
+		justify-self: end;
+	}
+
+	&__song {
+		cursor: pointer;
+		font-size: 18px;
+		color: #fff;
+	}
+
+	&__song--current {
+		color: red;
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 26px;
+		align-items: center;
+	}
+
+	&__poster {
+		max-width: 356px;
+	}
+
+	&__info {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	&__soundwave {
+		width: 100%;
+		// height: 55px;
+	}
+
+	&__time {
+		color: #fff;
+	}
+
+	&__current {
+		font-size: 20px;
+		color: #fff;
+	}
+
+	&__control {
+		display: flex;
+		gap: 26px;
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	&__icon {
+		fill: #fff;
+	}
+
+	&__btn {
+		cursor: pointer;
+		background-color: transparent;
+	}
+
+	&__btn--hidden {
+		display: none;
+	}
+
+	&__btn--visible {
+		display: block;
+	}
+}

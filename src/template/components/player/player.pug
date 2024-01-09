@@ -1,0 +1,73 @@
+section.player#player
+	.container 
+		.player__inner
+			span.player__name music
+			.player__content 
+				ul.player__playlist 
+					li.player__song.player__song--current 01. Hell On Earth
+					li.player__song 02. Cultist Base
+					li.player__song 03. Blood Harvesting
+					li.player__song 04. Soul Extraction
+					li.player__song 05. BFG Division 2020
+					li.player__song 06. Metal Hell
+					li.player__song 07. Paradise Lost
+					li.player__song 08. Urdak
+					li.player__song 09. The Doom Hunter
+					li.player__song 10. Infiltrate the Cult
+					li.player__song 11. Cultist Prayer
+					li.player__song 12. Demonic Corruption
+					li.player__song 13. Maykr Drones
+					li.player__song 14. The Khan Maykr
+					li.player__song 15. Deag Ranak
+					li.player__song 16. Mars Core
+					li.player__song 17. Deag Nilox
+					li.player__song 18. The Icon of Sin
+					li.player__song 19. Phobos Space
+					li.player__song 20. A Slayer City
+				.player__wrapper 
+					.player__poster 
+						video.doom__video(src="./video/poster.webm", loop, autoplay, width="550") 
+					.player__audio 
+						audio.player__track(src="./audio/01. Hell On Earth.mp3") 
+					.player__info
+						span.player__time.player__time--current 00:00
+						.player__current Hell On Earth
+						span.player__time.player__time--duration
+					.player__soundwave#playerwave
+
+					.player__control 
+						button.player__btn.player__btn--repeat(type="button") 
+							+svg('player--repeat', 'player__icon', 34, 34)
+						button.player__btn.player__btn--repeat-active.player__btn--hidden(type="button") 
+							+svg('player--repeat-active', 'player__icon', 34, 34)
+						button.player__btn.player__btn--prev(type="button") 
+							+svg('player--prev', 'player__icon', 44, 44)
+						button.player__btn.player__btn--play(type="button") 
+							+svg('player--play', 'player__icon', 44, 44)
+						button.player__btn.player__btn--pause.player__btn--hidden(type="button") 
+							+svg('player--pause', 'player__icon', 44, 44)
+						button.player__btn.player__btn--next(type="button") 
+							+svg('player--next', 'player__icon', 44, 44)
+						button.player__btn.player__btn--shuffle(type="button") 
+							+svg('player--shuffle', 'player__icon', 44, 44)
+				ul.player__playlist.player__playlist--two 
+					li.player__song 21. The Super Gore Nest
+					li.player__song 22. The Only Thing They Fear Is You
+					li.player__song 23. Asteroids and Rockets
+					li.player__song 24. You Can_t Just Shoot
+					li.player__song 25. Doom Hunted
+					li.player__song 26. Blood Sacrifice
+					li.player__song 27. Welcome Home Great Slayer
+					li.player__song 28. Prayer of the Diminished
+					li.player__song 29. Gladiator Boss
+					li.player__song 30. Beast of the Arena
+					li.player__song 31. Fortress of Doom
+					li.player__song 32. Revenant Possession
+					li.player__song 33. Usuper Gore
+					li.player__song 34. Sinister
+					li.player__song 35. Super Shotgun Reunion
+					li.player__song 36. The Baron of Hell
+					li.player__song 37. Doomed Hunter
+					li.player__song 38. Command and Control
+					li.player__song 39. BFG 10k
+					li.player__song 40. Sams Base
